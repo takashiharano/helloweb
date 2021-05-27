@@ -23,8 +23,8 @@ public class MainServlet extends HttpServlet {
     Date date = new Date(timestamp);
     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX");
     String datetime = sdf.format(date);
-    String msg = "Hello, world!";
-    String str = datetime + " (" + timestamp + ")\n" + msg;
+
+    String str = "Hello, world!" + "\n" + datetime + " (" + timestamp + ")";
 
     response.setContentType("text/plain");
     PrintWriter writer = response.getWriter();
