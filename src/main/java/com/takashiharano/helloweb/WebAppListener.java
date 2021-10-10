@@ -9,12 +9,12 @@ public class WebAppListener implements ServletContextListener {
 
   @Override
   public void contextInitialized(ServletContextEvent sce) {
-    System.out.println("[helloweb] Start");
+    Log.i("[helloweb] Start");
   }
 
   @Override
   public void contextDestroyed(ServletContextEvent sce) {
-    System.out.println("[helloweb] Stop");
+    Log.i("[helloweb] Stop");
   }
 
 }

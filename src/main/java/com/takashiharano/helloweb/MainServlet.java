@@ -24,7 +24,9 @@ public class MainServlet extends HttpServlet {
     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX");
     String datetime = sdf.format(date);
 
-    String str = "Hello, world!" + "\n" + datetime + " (" + timestamp + ")";
+    String msg = "Hello, world!";
+    String str = msg + "\n" + datetime + " (" + timestamp + ")";
+    Log.i(msg);
 
     response.setContentType("text/plain");
     PrintWriter writer = response.getWriter();
